@@ -1,0 +1,280 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 315px;
+  background-color: #003776;
+  color: #fff;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbarr {
+
+  background-color: #002C62;
+  top: 0;
+  width: 315px;
+  padding: 8px;
+  /* padding: 8px; */
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjust logo alignment */
+.navbarr .margin {
+  margin-left: 0;
+}
+
+/* Sidebar menu */
+.menu {
+  overflow-y: auto;
+  opacity: 0.7;
+  height: calc(100vh - 67px);
+  margin-top: 67px;
+  color: white;
+  padding: 0;
+}
+
+.sidebar .sidebar-nav :link:hover {
+  background-color: rgba(13, 65, 125, 0.8);
+  /* Adjust color as needed */
+  color: #f0f0f0;
+  transition: all 0.5s;
+}
+
+/* Sidebar Links */
+/* Sidebar Links */
+.sidebar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effects */
+.sidebar-nav Link:hover {
+  background-color: rgba(13, 65, 125, 0.8);
+  /* Adjust color as needed */
+  color: #f0f0f0;
+}
+
+
+/* Icon and Text Alignment */
+.sidebar-nav .nav-link .fa-icon {
+  margin-right: 15px;
+  width: 20px;
+  text-align: center;
+}
+
+.sidebar-nav .nav-link span {
+  flex-grow: 1;
+  margin-left: 8px;
+}
+
+/* Hover effects */
+
+/* Other Specific Adjustments */
+.Navigation {
+  position: fixed;
+  top: 0;
+  left: 315px;
+  width: calc(100% - 315px);
+  z-index: 1000;
+  background-color: rgb(239, 242, 239);
+  border-bottom: 1px solid #ccc;
+  transition: all 0.3s ease;
+
+
+}
+
+.Navigation.full-width {
+  left: 0;
+  width: 100%;
+}
+
+.main-content {
+  margin-top: 65px;
+  margin-left: 315px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: calc(100vh - 56px);
+  /* Adjusted for footer */
+  transition: all 0.3s ease;
+}
+
+.main-content.full-width {
+  margin-left: 0;
+}
+
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.btn {
+  margin-left: 95px;
+}
+
+#dropdown-custom-components {
+  color: #000;
+  font-size: 20px;
+}
+
+.BackGroundColor {
+  color: rgb(235, 237, 239);
+}
+
+.bgColor {
+  background-color: rgb(255, 255, 255);
+}
+
+.BgColorOne {
+  background-color: rgb(235, 237, 239);
+  height: 93vh;
+}
+
+.BgColorOnee {
+  background-color: rgb(235, 237, 239);
+}
+
+.colorBlue {
+  /* background-color: rgb(1, 159, 220); */
+  background-color: #159BD8;
+
+}
+
+.ButtonsCss {
+  font-size: 15px;
+  color: white;
+  padding: 22px 10px;
+  font-family: Segoe UI;
+  border-radius: 5px;
+  background-color: rgb(1, 159, 220);
+
+}
+
+.loginbutton {
+  margin-left: 225px;
+}
+
+.footer {
+  /* background-color: #dddedf; */
+  color: black;
+  padding: 8px 5px 0px 0px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 16px;
+  border-top: 1px solid lightgray;
+  width: 100%;
+  margin-top: 5px;
+  /* box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); */
+  position: relative;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 96vh;
+}
+
+/* style.css */
+.active-link {
+  background-color: rgba(13, 65, 125, 0.8);
+  /* Highlight color */
+  color: #f0f0f0;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar and Navbar Fixing */
+
+@media(max-width: 1024px) {
+  .main-content {
+    margin-top: 55px;
+    margin-left: 315px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: calc(100vh - 56px);
+    /* Adjusted for footer */
+    transition: all 0.3s ease;
+  }
+}
+
+
+
+/* --------------------------------------------Reshponsive Css ---------------------------------------------------*/
+
+.LogoBgColor {
+  background-color: #002C62;
+  color: white;
+  width: 320px;
+}
+
+.MenuItems {
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ccc;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.MenuBars {
+  background-color: #003776;
+  color: white;
+  padding: 0px;
+}
+
+.Navigationn {
+  /* z-index: 100; */
+  background-color: rgb(239, 242, 239);
+  border-bottom: 1px solid #ccc;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 20px; */
+}
+
+
+.MenuItems:hover {
+  color: #fff;
+  background-color: rgba(13, 65, 125, 0.8);
+}
+
+.MenuItems.active {
+  color: #fff;
+  background-color: rgba(13, 65, 125, 0.8);
+  border-left: 5px solid #01a3dd; /* Highlight border on the active item */
+}
+
+
+ @media(max-width: 390px){
+  .Navigation .BssName{
+    display: none;
+    padding: 0px;
+   }
+   .Navigation{
+    padding: 2px;
+   }
+ }
